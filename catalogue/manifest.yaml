@@ -8,9 +8,9 @@ metadata:
     purpose: roboshop
     component: catalogue
     tier: backend
-  data:
-    MONGO: "true"
-    MONGO_URL: "mongodb://mongodb:27017/catalogue"
+data:
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodb:27017/catalogue"
 
 ---
 apiVersion: apps/v1

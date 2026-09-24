@@ -8,9 +8,9 @@ metadata:
     purpose: roboshop
     component: shipping
     tier: backend
-  data:
-    CART_ENDPOINT: "cart:8080"
-    DB_HOST: "mysql"
+data:
+  CART_ENDPOINT: "cart:8080"
+  DB_HOST: "mysql"
 
 ---
 apiVersion: apps/v1
