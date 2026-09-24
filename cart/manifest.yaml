@@ -8,7 +8,7 @@ metadata:
     purpose: roboshop
     component: cart
     tier: backend
-  data:
+data:
   REDIS_HOST: "redis"
   CATALOGUE_HOST: "catalogue"
   CATALOGUE_PORT: "8080"
@@ -47,8 +47,8 @@ spec:
             - configMapRef:
                 name: cart
           ports:
-        - name: liveness-port
-          containerPort: 8080
+            - name: liveness-port
+              containerPort: 8080
           readinessProbe:
             httpGet:
               path: /health
