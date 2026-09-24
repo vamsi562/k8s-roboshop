@@ -47,8 +47,8 @@ spec:
             - configMapRef:
                 name: user
           ports:
-        - name: liveness-port
-          containerPort: 8080
+            - name: liveness-port
+              containerPort: 8080
           readinessProbe:
             httpGet:
               path: /health

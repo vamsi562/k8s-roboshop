@@ -8,14 +8,14 @@ metadata:
     purpose: roboshop
     component: payment
     tier: backend
-  data:
-    CART_HOST: "cart"
-    CART_PORT: "8080"
-    USER_HOST: "user"
-    USER_PORT: "8080"
-    AMQP_HOST: "rabbitmq"
-    AMQP_USER: "roboshop"
-    AMQP_PASS: "roboshop123"
+data:
+  CART_HOST: "cart"
+  CART_PORT: "8080"
+  USER_HOST: "user"
+  USER_PORT: "8080"
+  AMQP_HOST: "rabbitmq"
+  AMQP_USER: "roboshop"
+  AMQP_PASS: "roboshop123"
 
 ---
 apiVersion: apps/v1
@@ -51,8 +51,8 @@ spec:
             - configMapRef:
                 name: payment
           ports:
-        - name: liveness-port
-          containerPort: 8080
+            - name: liveness-port
+              containerPort: 8080
           readinessProbe:
             httpGet:
               path: /health

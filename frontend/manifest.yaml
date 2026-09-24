@@ -107,8 +107,8 @@ spec:
             - configMapRef:
                 name: frontend
           ports:
-        - name: liveness-port
-          containerPort: 80
+            - name: liveness-port
+              containerPort: 80
           readinessProbe:
             httpGet:
               path: /
