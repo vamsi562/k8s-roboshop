@@ -113,7 +113,7 @@ spec:
     spec:
       containers:
         - name: shipping
-          image: joindevops/shipping:v1
+          image: vamsi562/shipping:v1
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
