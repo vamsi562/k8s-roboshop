@@ -132,7 +132,7 @@ spec:
             httpGet:
               path: /health
               port: liveness-port
-            initialDelaySeconds: 45
+            initialDelaySeconds: 50
             failureThreshold: 3
             periodSeconds: 15
 ---
